@@ -10,6 +10,7 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 steps:
-- displayName: "Build Resume"
-  script: ./build_resume.sh pdflatex -on-error Resume.tex
+- script: ./build_resume.sh pdflatex -on-error Resume.tex
+  displayName: "Build Resume"
+  
 
