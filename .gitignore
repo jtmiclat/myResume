@@ -1,0 +1,17 @@
+*.log
+*.aux
+*.log
+*.bcf
+*.xml
+.fuse*
+*nav
+*out
+*snm
+*toc
+*vrb
+*pyg*
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.*
