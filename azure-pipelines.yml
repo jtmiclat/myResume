@@ -23,6 +23,3 @@ steps:
   displayName: "Upload to dropbox"
   env:
     DROPBOX_TOKEN : $(DROPBOX_TOKEN)
-
-variables:
-
