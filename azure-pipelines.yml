@@ -15,13 +15,10 @@ steps:
     versionSpec: '3.6'
     architecture: 'x64'
 
-- script: ./build_resume.sh pdflatex -on-error Resume.tex
+- script: ./bin/build_resume.sh pdflatex -on-error Resume.tex
   displayName: "Build Resume"
 
-- script: |
-    pip3 install pipenv
-    pipenv install
-    pipenv run upload_dropbox.py --source=Resume/Resume.pdf --target=/Resume.pdf
+- script: ./bin/upload_dropbox.sh
   displayName: "Upload Resume to Dropbox"
   env:
     DROPBOX_TOKEN : $(DROPBOX_TOKEN)
