@@ -15,10 +15,8 @@ steps:
     versionSpec: '3.6'
     architecture: 'x64'
 
-- script: ./bin/build_resume.sh pdflatex -on-error Resume.tex
+- script: make build-pdf
   displayName: "Build Resume"
 
-- script: ./bin/upload_dropbox.sh
+- script: make upload-pdf DROPBOX_TOKEN=$(DROPBOX_TOKEN)
   displayName: "Upload Resume to Dropbox"
-  env:
-    DROPBOX_TOKEN : $(DROPBOX_TOKEN)
