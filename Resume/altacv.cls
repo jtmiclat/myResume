@@ -93,6 +93,7 @@
 \newcommand{\personalinfo}[1]{\def\@personalinfo{#1}}
 
 \newcommand{\makecvheader}{%
+  \medskip
   \begingroup
     \ifdef{\@photodiameter}{\begin{minipage}{\dimexpr\linewidth-\@photodiameter-2em}}{}%
     \raggedright\color{emphasis}%
@@ -119,7 +120,7 @@
   \medskip%
   \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}}}%
   {\color{heading}\large\bfseries\MakeUppercase{#2}}\\[-1ex]%
-  {\color{heading}\rule{\linewidth}{2pt}\par}
+  {\color{heading}\rule{\linewidth}{2pt}\par}\medskip
 }
 
 \newcommand{\cvsubsection}[1]{%
@@ -128,7 +129,7 @@
 }
 
 \newcommand{\cveventshort}[3]{%
-  {\large\color{emphasis}#1\par}
+  {\color{emphasis}#1\par}
   \smallskip
   {\small\makebox[0.5\linewidth][l]{\faCalendar \hspace{0.5em}#2}%
   \ifstrequal{#3}{}{}{\makebox[0.3\linewidth][l]{\faMapMarker\hspace{0.5em}#3}}\par}
