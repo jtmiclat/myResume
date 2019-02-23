@@ -111,7 +111,7 @@
       \tikz\path[fill overzoom image={\@photo}]circle[radius=0.5\linewidth];
     \fi%
     \end{minipage}\par}{}%
-  \endgroup\
+  \endgroup
 }
 
 \renewenvironment{quote}{\color{accent}\itshape\large}{\par}
@@ -129,10 +129,8 @@
 }
 
 \newcommand{\cveventshort}[3]{%
-  {\color{emphasis}#1\par}
-  \smallskip
-  {\small\makebox[0.5\linewidth][l]{\faCalendar \hspace{0.5em}#2}%
-  \ifstrequal{#3}{}{}{\makebox[0.3\linewidth][l]{\faMapMarker\hspace{0.5em}#3}}\par}
+  {\large\color{emphasis}#1} \par {\faCalendar \hspace{0.5em}#2}
+  %\ifstrequal{#3}{}{}{\makebox[0.3\linewidth][l]{\faMapMarker\hspace{0.5em}#3}}\par}
   \medskip
 }
 
@@ -148,12 +146,15 @@
 \newcommand{\cvevent}[4]{%
   {\large\color{emphasis}#1\par}
   \smallskip
-  {\textbf{\color{accent}#2}
+  {\textbf{\color{accent}#2} \hfill {\faCalendar \hspace{0.5em}#3}
   %{\faCalendar \hspace{0.5em}#3}
-  \par}
-  \smallskip
-  {\small\makebox[0.5\linewidth][l]{\faCalendar \hspace{0.5em}#3}
-  \ifstrequal{#4}{}{}{\makebox[0.3\linewidth][l]{\faMapMarker\hspace{0.5em}#4}}\par}
+  % \par
+  % }
+
+  % \smallskip
+% Remove location
+% \ifstrequal{#4}{}{}{\makebox[0.3\linewidth][l]{\faMapMarker\hspace{0.5em}#4}}\par
+  }
   \smallskip
 }
 
