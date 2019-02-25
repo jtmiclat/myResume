@@ -1,5 +1,5 @@
 LATEX_IMAGE ?=blang/latex:ctanfull
-DROPBOX_UPLOADER_IMAGE=jtmiclat/dropbox-uploader
+DROPBOX_UPLOADER_IMAGE=jtmiclat/dropbox-uploader:latest
 HOST ?= $(shell pwd)
 DROPBOX_TOKEN ?= $(shell echo $${DROPBOX_TOKEN})
 MOUNT_USER ?= --user="$(shell id -u):$(shell id -g)"
