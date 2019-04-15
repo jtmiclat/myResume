@@ -143,6 +143,15 @@
   \smallskip
 }
 
+
+\newcommand{\cveventreference}[2]{%
+  {\color{emphasis}#1\par}
+  \smallskip
+  {\small{\faEnvelope}}
+  \hspace{0.5em}{\small #2}
+  \smallskip
+}
+
 \newcommand{\cvevent}[4]{%
   {\large\color{emphasis}#1\par}
   \smallskip
@@ -155,7 +164,7 @@
 % Remove location
 % \ifstrequal{#4}{}{}{\makebox[0.3\linewidth][l]{\faMapMarker\hspace{0.5em}#4}}\par
   }
-  \smallskip
+  \medskip
 }
 
 \newcommand{\cvachievement}[3]{%
