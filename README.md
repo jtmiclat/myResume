@@ -1,3 +1,7 @@
-# myResume
-Latex for my Resume.
-[![Build Status](https://dev.azure.com/jtcmic/jtcmic/_apis/build/status/myResume?branchName=master)](https://dev.azure.com/jtcmic/jtcmic/_build/latest?definitionId=1?branchName=master)<Paste>
+# Resume of Jt Miclat
+Latex Resume built using [AltaCV](https://github.com/liantze/AltaCV)
+
+
+## Ci/CD
+Uses Github Action to automaitcally build and upload to Dropbox.
+Uses the docker image [jtmiclat/dropbox-uploader](https://github.com/jtmiclat/dropbox-uploader)
