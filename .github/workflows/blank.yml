@@ -14,4 +14,4 @@ jobs:
     - name: Build Resume
       run:  make build-pdf
     - name: Upload Resume to Dropbox
-      run: make upload-pdf DROPBOX_TOKEN=$DROPBOX_TOKEN
+      run: make upload-pdf DROPBOX_TOKEN=${{ secrets.DROPBOX_TOKEN }}
